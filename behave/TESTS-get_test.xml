@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="25.010024309158325" tests='2' skipped='0'
+name="Get_Test" failures='0' errors='0'><testcase time="13.496692419052124" name="Get_Close_Approach_Data_--_@1.1_" status="passed"
+         classname="Get_Close_Approach_Data_For_Asteroids_And_Neos"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @test
+                scenario: GET close approach data -- @1.1 
+                given I send the parameters &#34;2021-01-01&#34;,&#34;2023-01-01&#34;,&#34;0&#34;,&#34;0.2&#34; to get the close approach data for &#34;443&#34; ... passed in 13.49s 
+                then I verify the response ... passed in 0.001005s 
+                then I verify the data contains ... passed in 0.001001s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="11.513331890106201" name="Get_Close_Approach_Data_--_@1.2_" status="passed"
+         classname="Get_Close_Approach_Data_For_Asteroids_And_Neos"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @test
+                scenario: GET close approach data -- @1.2 
+                given I send the parameters &#34;2021-01-01&#34;,&#34;2023-01-01&#34;,&#34;0&#34;,&#34;10LD&#34; to get the close approach data for &#34;neo&#34; ... passed in 11.51s 
+                then I verify the response ... passed in 0.0s 
+                then I verify the data contains ... passed in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

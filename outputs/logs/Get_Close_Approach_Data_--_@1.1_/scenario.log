@@ -1,0 +1,7 @@
+﻿20:30:06 - INFO - STEP: I send the parameters "2021-01-01","2023-01-01","0","0.2" to get the close approach data for "443"
+20:30:06 - INFO - Querying to get the close approach data for 443 with parameters 2021-01-01,2023-01-01,0,0.2
+20:30:20 - INFO - API responded with the status code 200
+20:30:20 - INFO - STEP: I verify the response
+20:30:20 - INFO - API responded with the status code 200
+20:30:20 - INFO - STEP: I verify the data contains
+20:30:20 - INFO - API returned no data!!.May be the query is too restrictive

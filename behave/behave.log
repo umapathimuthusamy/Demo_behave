@@ -1,0 +1,14 @@
+Feature: GET close approach data for asteroids and NEOs # features/get_test.feature:1
+
+  @test
+  Scenario Outline: GET close approach data -- @1.1                                                          # features/get_test.feature:9
+    Given I send the parameters "2021-01-01","2023-01-01","0","0.2" to get the close approach data for "443" # features/steps/get_distance_api.py:13
+    Then I verify the response                                                                               # features/steps/get_distance_api.py:30
+    And I verify the data contains                                                                           # features/steps/get_distance_api.py:39
+
+  @test
+  Scenario Outline: GET close approach data -- @1.2                                                           # features/get_test.feature:10
+    Given I send the parameters "2021-01-01","2023-01-01","0","10LD" to get the close approach data for "neo" # features/steps/get_distance_api.py:13
+    Then I verify the response                                                                                # features/steps/get_distance_api.py:30
+    And I verify the data contains                                                                            # features/steps/get_distance_api.py:39
+
